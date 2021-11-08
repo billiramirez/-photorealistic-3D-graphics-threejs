@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photorealistic 3D graphics</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      #title-container {
+        z-index: 2;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.75);
+        top: 20px;
+        left: 20px;
+        padding: 20px;
+        pointer-events: none;
+      }
+
+      #title {
+        width: 100%;
+        color: rgb(227, 255, 71);
+        font-size: 24px;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        font-style: italic;
+        text-align: left;
+      }
+
+      .course-link a {
+        font-size: 0.75em;
+        color: rgb(227, 89, 255);
+        text-transform: initial;
+        text-decoration: none;
+        pointer-events: auto;
+        cursor: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="webgl"></div>
+    <div id="title-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
+
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r86/examples/js/controls/OrbitControls.js"></script>
+
+    <script src="https://cdn.rawgit.com/jeromeetienne/threex.windowresize/master/threex.windowresize.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:900,900i"
+      rel="stylesheet"
+    />
+    <script src="/main.js"></script>
+  </body>
+</html>
